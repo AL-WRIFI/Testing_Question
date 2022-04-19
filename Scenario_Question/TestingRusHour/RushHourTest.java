@@ -15,22 +15,22 @@ public class RushHourTest {
 
     @Test
     public void Boundrytest1(){
-        String result =c.TrainTicketFare((float) 9.29);
+        String result =c.TrainTicketFare((float) 9.49);
         assertEquals("Full Fare",result);
     }
     @Test
     public void Boundrytest2(){
-        String result =c.TrainTicketFare((float )9.35);
+        String result =c.TrainTicketFare((float )9.51);
         assertEquals("Saver Ticket ",result);
     }
     @Test
     public void Boundrytest3(){
-        String result =c.TrainTicketFare((float ) 19.29);
+        String result =c.TrainTicketFare((float ) 19.49);
         assertEquals("Full Fare ",result);
     }
     @Test
     public void Boundrytest4(){
-        String result =c.TrainTicketFare((float ) 19.35);
+        String result =c.TrainTicketFare((float ) 19.51);
         assertEquals("Saver Ticket ",result);
     }
 
