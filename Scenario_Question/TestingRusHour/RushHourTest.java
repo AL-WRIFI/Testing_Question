@@ -15,22 +15,22 @@ public class RushHourTest {
 
     @Test
     public void Boundrytest1(){
-        String result =c.TrainTicketFare((float) 1.50);
+        String result =c.TrainTicketFare((float) 9.29);
         assertEquals("Full Fare",result);
     }
     @Test
     public void Boundrytest2(){
-        String result =c.TrainTicketFare((float ) 11);
+        String result =c.TrainTicketFare((float )9.35);
         assertEquals("Saver Ticket ",result);
     }
     @Test
     public void Boundrytest3(){
-        String result =c.TrainTicketFare((float ) 11.30);
-        assertEquals("Saver Ticket ",result);
+        String result =c.TrainTicketFare((float ) 19.29);
+        assertEquals("Full Fare ",result);
     }
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void Boundrytest4(){
-        String result =c.TrainTicketFare((float ) -2);
+        String result =c.TrainTicketFare((float ) 19.35);
         assertEquals("Saver Ticket ",result);
     }
 

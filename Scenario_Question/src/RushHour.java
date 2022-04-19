@@ -3,9 +3,9 @@ public class RushHour {
         String ticketPrice="null";
         if(time<=0 || time>24)
             throw  new IllegalArgumentException("Ambiguas time enterd!!!");
-        if ((time>=1 && time<=9.50) || (time>=16 && time<=19.50) )
+        if ((time>=1 && time<=9.30) || (time>=16 && time<=19.30) )
             ticketPrice="Full Fare";
-        if ((time>9.50 && time<16) || (time>19.50 && time<=24) )
+        if ((time>9.30 && time<16) || (time>19.30 && time<=24) )
             ticketPrice="Saver Ticket ";
 
         return ticketPrice;
